@@ -1,5 +1,38 @@
-/* Footer */
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --heading-font: 'BEBAS NEUE';
+  --gold: #CFAD6C;
+  --white: #ffffff;
+  --light: #dddddd;
+}
 
+body {
+  font-family: var(--main-font);
+}
+
+/* ================= FOOTER STYLES ================= */
+
+
+/* Footer heading (h3) styles */
+footer h3 {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  font-family: var(--heading-font);
+}
+
+/* Footer links */
+footer a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+/* Footer links with dash before them */
 .footer-links li {
   position: relative;
   margin-bottom: 10px;
@@ -10,16 +43,27 @@
 .footer-links li::before {
   content: "—";
   position: absolute;
-  color: #ffffff;
+  left: 0;
+  color: var(--white);
   font-weight: bold;
   transition: color 0.2s;
-  left: 0; 
 }
 
 .footer-links li:hover::before {
   color: var(--gold);
 }
 
+/* Instagram button in the image section */
+.instagram-button {
+  transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+  background-color: #eee;
+  color: var(--gold) !important;
+}
+
+/* Responsive adjustments for mobile screens */
 @media (max-width: 767.98px) {
   .footer-links li::before {
     display: none;
@@ -28,5 +72,15 @@
   .footer-links li {
     padding-left: 0;
     text-align: center;
+  }
+
+  footer h3 {
+    white-space: normal;
+    text-align: center;
+  }
+
+  footer .col-md-6,
+  footer .col-lg-4 {
+    text-align: center !important;
   }
 }
