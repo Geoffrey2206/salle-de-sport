@@ -1,0 +1,32 @@
+/* Footer */
+
+.footer-links li {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.footer-links li::before {
+  content: "—";
+  position: absolute;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.2s;
+  left: 0; 
+}
+
+.footer-links li:hover::before {
+  color: var(--gold);
+}
+
+@media (max-width: 767.98px) {
+  .footer-links li::before {
+    display: none;
+  }
+
+  .footer-links li {
+    padding-left: 0;
+    text-align: center;
+  }
+}
