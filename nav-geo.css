@@ -1,0 +1,130 @@
+/* Mise en place root pour police d'ecriture, couleur de texte et fond, ainsi que taille de texte. */
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --heading-font: 'BEBAS NEUE';
+  --gold: #CFAD6C;
+  --white: #ffffff;
+  --light: #dddddd;
+  --dark-grey:  #282828;
+  --fs-15: 0.938rem;
+  --fs-13: 0.8rem; 
+  --fs-11: 0.7rem;
+}
+/* Taille de texte */
+.large {
+  font-size: var(--fs-15);
+}
+.medium {
+  font-size: var(--fs-13);
+}
+.small {
+  font-size: var(--fs-11);
+}
+/* Police d'ecriture */
+.body {
+  font-family: var(--main-font);
+}
+.font-text{
+  font-family: var(--heading-font);
+}
+/* Dimension icones */
+.width20{
+  width: 20px;
+  height: 20px;
+}
+/* Dimension du logo */
+.logowidth{
+  width: 9.375rem;
+  height:3.75rem;
+}
+/*animation couleur au passage de la souris (menu déroulant)*/
+.gold-hover:hover {
+    background-color: transparent !important;
+    color: #CFAD6C !important;
+  }
+/*animation au passage de la souris sur les onglets de la navigation*/
+.nav-hover {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 24px 16px;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+.nav-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #CFAD6C; /* Doré */
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+.nav-hover:hover::before {
+  width: 100%;
+}
+.nav-hover:hover {
+  color: black;
+}
+/*stylisation du lien "EN"*/
+.lang-ribbon {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: inline-block;
+  background-color: #CFAD6C;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); /* forme de pointe */
+}
+/* Alignement forcé des différents blocs de la navigation*/
+#navbarSupportedContent{
+  display: contents!important;
+}
+/*Mise en place responsive*/
+@media (max-width: 1200px) {
+  .phone{
+    display: none !important;
+  }
+  .reseau{
+    display: none !important;
+  }
+  #navbarSupportedContent{
+    display: flex!important;
+  }
+}
+@media (max-width: 992px) {
+  
+#navbarSupportedContent:not(.show){
+    display: none!important;
+  }
+  .title{
+    justify-content: center !important;
+  }
+  .nav-hover{
+    padding: 5px 10px;
+  }
+  .large{
+    font-size: 14px !important;
+  }
+  .carousel-item img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 18rem !important;
+  }
+  .navbar-toggler{
+     background-color: #CFAD6C;
+     padding: 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .large{
+    font-size: 12px !important;
+  }
+}
