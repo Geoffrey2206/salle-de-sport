@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Le Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+    <!-- Ensemble du code de la barre de navigation -->
+    <img src="images/header-contact copie.jpg" alt="Image de couverture" class="header-image">
+ <div class="title z-3 position-absolute w-100 px-0 ">
+    <nav class="title navbar navbar-expand-lg w-100 justify-content-lg-around justify-content-between align-items-lg-center align-items-baseline bebas "> 
+        <!-- logo -->
+       <a class="navbar-brand logowidth " href="#"><img src="images/logo copie.png" alt="logo"></a>
+            <div style="display: contents;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse centered-menu"         id="navbarSupportedContent">
+                <!-- Les différents onglets de séléctions -->
+                  <ul class=" navbar-nav px-2 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link nav-hover body large"  href="#">LE STUDIO</a>
+                </li>
+                      <li class="nav-item">
+                          <a class="nav-link  nav-hover body large" href="#">L'ÉQUIPE</a>
+                      </li>
+                      <!-- menu déroulant avec les différentes pages d'activités -->
+                      <li class=" nav-item dropdown">
+                          <a class=" nav-link dropdown-toggle nav-hover body large" href="#" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
+                          <ul class="dropdown-menu bg-dark body large">
+                              <li><a class=" dropdown-item text-white gold-hover text-decoration-non " href="#">LE CYCLING</a></li>
+                              <li><a class="dropdown-item text-white gold-hover  " href="#">LE TRAINING FONCTIONNEL</a></li>
+                              <li><a class="dropdown-item text-white gold-hover" href="#">LE CROSSFIT</a></li>
+                              <li><a class="dropdown-item text-white gold-hover" href="#">PERSONAL TRAINING - COACH PERSONNEL</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link nav-hover body large" href="#">NOS OFFRES</a>
+                      </li>
+                    
+                      <li class="nav-item">
+                            <a class="nav-link nav-hover body large" href="#">MEDIAS</a>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link nav-hover body large" href="#">CONTACT</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+            <!-- Numéro de téléphone + icone -->
+            <div class=" phone text-white d-lg-block d-none" 
+            style="white-space: nowrap;">
+                <img src="assets/img/navigation/phone.svg" alt="icone portable" class="width20">
+                <p class="d-inline body large">05 59 47 84 18</p>
+            </div>
+            <!--Réseaux sociaux icones-->
+            <div class="reseau z-3 d-lg-flex align-items-center social-icons gap-2 d-none">
+                <img src="assets/img/navigation/Facebook.svg" alt="icone Facebook" class="width20">
+                <img src="assets/img/navigation/Instagram.svg" alt="icone instragram" class="width20" >
+                <img src="assets/img/navigation/TripAdvisor.svg" alt="icone tripadvisor" class="width20" >
+            </div>
+              <!--Icone pour changer la langue de lecture en anglais-->
+            <div style="display: contents; ">
+                <a href="#" class="lang-ribbon small body"  >EN</a>
+            </div>
+    </nav>
+  </div>   
+</header>
+
+  <main>
+    <!--Section contact et informations-->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row g-4 d-flex justify-content-center">
+          <div class="col-lg-3">
+            <div class="contact-card">
+              <h2 class="section-title mb-4">
+                <span class="border-bottom border-3 border-warning">Nos Coo</span>rdonnées
+              </h2>
+              <div class="mb-4">
+                <h5 class="mb-2 fw-bold">Studio Sport &amp; Coaching</h5>
+
+                <p class="mb-0">01 Allée Marie Politzer<br>64200 Biarritz</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="mb-2 fw-bold">Téléphone</h5>
+                <p class="mb-0">05 59 47 84 18</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="mb-2 fw-bold">Horaires</h5>
+
+                <p class="mb-0">Lun - Ven : 8h à 14h, 16h à 21h<br>Samedi : 10h à 13h</p>
+              </div>
+              <div>
+                <h5 class="mb-2 fw-bold">Email</h5>
+                <p class="mb-0">contact@studiobiarritz.com<br>ou via ce formulaire</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-card">
+              <h2 class="section-title mb-4">
+                <!--Section formulaire ! -->
+                <span class="border-bottom border-3 border-warning">Formu</span>laire de contact
+              </h2>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nom" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Prénom" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" class="form-control" placeholder="Téléphone">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Sujet">
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control" rows="5" placeholder="Votre message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-submit w-60">Envoyer</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <img src="images/maps2sp-copie.png" alt="Carte de Biarritz" class="img-fluid w-100">
+    </section>
+    
+  
+  </main>
+
+  
+  <!-- FOOTER -->
+<footer class="bg-dark text-white small">
+  <!-- Footer Images Section -->
+  <div class="position-relative mb-5">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <!-- Loop Images -->
+        <div class="col-6 col-md-2">
+          <a href="images/footer1.png" target="_blank">
+            <img src="images/footer1.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Footer Image 1">
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="images/footer2.png" target="_blank">
+            <img src="images/footer2.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Footer Image 2">
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="images/footer3.png" target="_blank">
+            <img src="images/footer3.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Footer Image 3">
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="images/footer4.png" target="_blank">
+            <img src="images/footer4.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Footer Image 4">
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="images/footer5.png" target="_blank">
+            <img src="images/footer5.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Footer Image 5">
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="images/footer6.png" target="_blank">
+            <img src="images/footer6.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Footer Image 6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram Button -->
+    <a href="404.html" class="instagram-button position-absolute top-50 start-50 translate-middle bg-white text-dark fw-bold px-4 py-2 text-decoration-none rounded-pill shadow">
+      @STUDIOBIARRITZ
+    </a>
+  </div>
+
+  <!-- Footer Content -->
+  <div class="container pb-4">
+    <div class="row gy-4">
+      <!-- Column 1 -->
+      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-baseline justify-content-center justify-content-md-start gap-md-3 text-center text-md-start mb-3" style="margin-top: -15px;">
+          <!-- Logo -->
+          <div>
+            <img src="images/logo_footerk.png" alt="logofooter" style="width: 30px; height: auto;">
+          </div>
+          <!-- Title -->
+          <div class="mt-2 mt-md-0">
+            <h3 class="text-uppercase fw-bold mb-3 text-white">À PROPOS</h3>
+          </div>
+        </div>
+        <p class="mb-1"><strong>2018 © Studio Sport Biarritz</strong></p>
+        <p class="mb-1">Salle de sport, de fitness et de crossfit<br>à Biarritz Pays basque.</p>
+        <p class="mb-1">RCS : 000 000 000</p>
+        <p class="mb-4 mb-md-0">
+          <a href="#" class="fw-bold" style="text-decoration: underline;">Mentions légales</a>
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+        <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Studio Sport Corporate</h3>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Studio Center : créez votre studio</a></li>
+          <li><a href="#">Offres Spéciales C.E.</a></li>
+          <li><a href="#">Devenir partenaire</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+        <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Fitness, CrossFit et Training au Pays Basque</h3>
+        <p class="fw-bold">
+          <a href="#">Coach personnel de sport à Biarritz</a>,
+          <a href="#">Coach personnel de sport à Anglet</a>,
+          <a href="#">Salle de sport BAB</a>,
+          <a href="#">Fitness à Biarritz</a>,
+          <a href="#">Sessions de fitness à Anglet</a>,
+          <a href="#">Fitness sur le BAB</a>,
+          <a href="#">Coach sportif à Bayonne</a>,
+          <a href="#">Fitness personnalisé à Anglet</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center py-3 px-2 bg-black small text-secondary text-center" style=" font-size: 12px;">
+    <p class="mb-0 text-white">
+      Un site créé par<br>
+      <strong class="text-white">L'AGENCE 364 COM</strong>
+      <img src="images/364.png" alt="logoagence" class="align-middle ms-2" style="height: 20px;">
+    </p>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
