@@ -1,0 +1,43 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --heading-font: 'BEBAS NEUE';
+  --gold: #CFAD6C;
+  --white: #ffffff;
+  --light: #dddddd;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+.error-code {
+  display: inline-block;
+  transition: transform 1.5s ease-in-out;
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--gold);
+  font-family: var(--heading-font);
+  line-height: 1;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #c2a256;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
