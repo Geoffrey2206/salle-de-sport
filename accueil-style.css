@@ -97,59 +97,7 @@
 #navbarSupportedContent{
   display: contents!important;
 }
-/*Mise en place responsive*/
-@media (max-width: 1200px) {
-  .phone{
-    display: none !important;
-  }
-  .reseau{
-    display: none !important;
-  }
-  #navbarSupportedContent{
-    display: flex!important;
-  }
-}
-@media (max-width: 992px) {
-  
-#navbarSupportedContent:not(.show){
-  display: none!important;
-}
-.title{
-  justify-content: center !important;
-}
-.nav-hover{
-  padding: 5px 10px;
-}
-.large{
-  font-size: 14px !important;
-}
-.carousel-item img {
-  object-fit: cover !important;
-  width: 100% !important;
-  height: 18rem !important;
-}
-.navbar-toggler{
-     background-color: #CFAD6C;
-     padding: 0 0;
-  }
-  .font-title{
-    font-size: 1rem;
-  }
-  /* suppression de la marge pour le responsive */
-  .mb-56{
-    margin-bottom: 0 !important;
-  }
-}
-@media (max-width: 576px) {
-  .large{
-    font-size: 12px !important;
-  }
-  /* changement de taille du bouton slider */
-  .btn-medium{
-    font-size: var(--fs-13);
-  }
-  
-}
+
 /* Le header contient tout le slider */
 header {
   position: relative;
@@ -304,28 +252,6 @@ footer a:hover {
   color: var(--gold) !important;
 }
 
-/* Responsive adjustments for mobile screens */
-@media (max-width: 767.98px) {
-  .footer-links li::before {
-    display: none;
-  }
-
-  .footer-links li {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  footer h3 {
-    white-space: normal;
-    text-align: center;
-  }
-
-  footer .col-md-6,
-  footer .col-lg-4 {
-    text-align: center !important;
-  }
-}
-
 .logo-title {
   display: flex;
   align-items: center;
@@ -367,7 +293,7 @@ a {
 .gold-underline::after {
   content: "";
   position: absolute;
-  bottom: 50px; /* espace entre le texte et le trait */
+  bottom: 40px; /* espace entre le texte et le trait */
   left: 50%;
   transform: translateX(-50%);
   width: 60px; /* longueur du trait */
@@ -433,4 +359,111 @@ a {
 }
 .fw-500{
   font-weight: 600;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 1200px) {
+  .phone{
+    display: none !important;
+  }
+  .reseau{
+    display: none !important;
+  }
+  #navbarSupportedContent{
+    display: flex!important;
+  }
+  .navbar-brand.logowidth img {
+  width: 150px !important;
+  height: auto;
+}
+  .navbar-brand {
+    margin-left: 1.5rem; 
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+.mg {
+  margin-left: 5.5rem !important;
+  margin-right: 5.5rem !important;
+}
+  }
+
+@media (max-width: 992px) {
+  
+#navbarSupportedContent:not(.show){
+  display: none!important;
+}
+.title{
+  justify-content: center !important;
+}
+.nav-hover{
+  padding: 5px 10px;
+}
+.large{
+  font-size: 14px !important;
+}
+.carousel-item img {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 18rem !important;
+}
+.navbar-toggler{
+     background-color: #CFAD6C;
+     padding: 0 0;
+  }
+  .font-title{
+    font-size: 1rem;
+  }
+  /* suppression de la marge pour le responsive */
+  .mb-56{
+    margin-bottom: 0 !important;
+  }
+
+  .navbar-collapse {
+  background-color: #212529;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 2rem 1.5rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  .nav-link {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+}
+
+@media (max-width: 768px) {
+  .footer-links li::before {
+    display: none;
+  }
+
+  .footer-links li {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  footer h3 {
+    white-space: normal;
+    text-align: center;
+  }
+
+  footer .col-md-6,
+  footer .col-lg-4 {
+    text-align: center !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .large{
+    font-size: 12px !important;
+  }
+  /* changement de taille du bouton slider */
+  .btn-medium{
+    font-size: var(--fs-13);
+  }
 }

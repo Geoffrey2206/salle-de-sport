@@ -13,60 +13,66 @@
 <body>
 
 <!-- HEADER -->
-<header style="position: relative;">
+<header> 
+  <!-- Banner -->
   <div class="banner" style="background-image: url('assets/img/visuel_3.jpg'); height: 300px; background-size: cover; background-position: center;">
     <div style="background: rgba(0, 0, 0, 0.2); height: 100%;">
+      <!-- Navigation menu -->
       <div class="title z-3 position-absolute w-100 px-0">
-        <nav class="navbar navbar-expand-lg w-100 justify-content-lg-around justify-content-between align-items-lg-center align-items-baseline bebas">
+        <nav class="title navbar navbar-expand-lg w-100 justify-content-lg-around align-items-lg-center align-items-baseline bebas"> 
           
           <!-- Logo -->
-          <a class="navbar-brand logowidth" href="index.html">
+          <a class="navbar-brand logowidth" href="accueil.html">
             <img src="assets/img/navigation/logo.png" alt="logo">
           </a>
+            <div>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <!-- Toggle button (burger menu) -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <div class="collapse navbar-collapse centered-menu mr" id="navbarSupportedContent">
+              <!-- Navigation items -->
+              <ul class="navbar-nav px-2 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link nav-hover body large" href="404.html">L'ÉQUIPE</a>
+                </li>
+                
+                <!-- Dropdown menu with activity pages -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-hover body large" href="presentation.html" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
+                  <ul class="dropdown-menu bg-dark body large">
+                    <li><a class="dropdown-item text-white gold-hover text-decoration-non" href="404.html">LE CYCLING</a></li>
+                    <li><a class="dropdown-item text-white gold-hover" href="presentation.html#training">LE TRAINING FONCTIONNEL</a></li>
+                    <li><a class="dropdown-item text-white gold-hover" href="404.html">LE CROSSFIT</a></li>
+                    <li><a class="dropdown-item text-white gold-hover" href="404.html">PERSONAL TRAINING - COACH PERSONNEL</a></li>
+                  </ul>
+                </li>
 
-          <!-- Navigation links -->
-          <div class="collapse navbar-collapse centered-menu" id="navbarSupportedContent">
-            <ul class="navbar-nav px-2 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link nav-hover body large" href="404.html">L'ÉQUIPE</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle nav-hover body large" href="presentation.html" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
-                <ul class="dropdown-menu bg-dark body large">
-                  <li><a class="dropdown-item text-white gold-hover text-decoration-non" href="404.html">LE CYCLING</a></li>
-                  <li><a class="dropdown-item text-white gold-hover" href="presentation.html#training">LE TRAINING FONCTIONNEL</a></li>
-                  <li><a class="dropdown-item text-white gold-hover" href="404.html">LE CROSSFIT</a></li>
-                  <li><a class="dropdown-item text-white gold-hover" href="404.html">PERSONAL TRAINING - COACH PERSONNEL</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-hover body large" href="404.html">NOS OFFRES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-hover body large" href="404.html">PLANNING</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-hover body large" href="404.html">LE BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-hover body large" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link nav-hover body large" href="404.html">NOS OFFRES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-hover body large" href="404.html">PLANNING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-hover body large" href="404.html">LE BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-hover body large" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
           </div>
+            </div>
+           
 
-          <!-- Phone number with icon -->
+          <!-- Phone number + icon -->
           <div class="phone text-white d-lg-block d-none" style="white-space: nowrap;">
-            <img src="assets/img/navigation/Clip path group.svg" alt="icone portable" class="width20">
+            <img src="assets/img/navigation/phone.svg" alt="phone icon" class="width20">
             <p class="d-inline body large">05 59 47 84 18</p>
           </div>
 
-          <!-- Social Media icons -->
+          <!-- Social media icons -->
           <div class="reseau z-3 d-lg-flex align-items-center social-icons gap-2 d-none">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <img src="assets/img/navigation/Facebook.svg" alt="icone Facebook" class="width20">
@@ -79,10 +85,11 @@
             </a>
           </div>
 
-          <!-- Language Switch -->
-          <div>
+          <!-- Language switch icon -->
+          <div style="display: contents;">
             <a href="#" class="lang-ribbon small body">EN</a>
           </div>
+
         </nav>
       </div>
     </div>
@@ -100,7 +107,7 @@
 
     <div class="row align-items-center">
       <!-- Text -->
-      <div class="col-12 col-lg-6 text-center text-lg-start">
+      <div class="col-12 col-lg-6 text-center text-lg-start ps-lg-5">
         <p style="text-align: justify;">
           <strong>Le training fonctionnel</strong> est une méthode d'entraînement moderne, complète et accessible à tous.
           Il sollicite l’ensemble des <strong>groupes musculaires</strong> grâce à des <em>exercices dynamiques</em> et naturels,
@@ -345,7 +352,7 @@
         <p class="mb-1">Salle de sport, de fitness et de crossfit<br>à Biarritz Pays basque.</p>
         <p class="mb-1">RCS : 000 000 000</p>
         <p class="mb-4 mb-md-0">
-          <a href="#" class="fw-bold" style="text-decoration: underline;">Mentions légales</a>
+          <a href="404.html" class="fw-bold" style="text-decoration: underline;">Mentions légales</a>
         </p>
       </div>
 
@@ -353,9 +360,9 @@
       <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
         <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Studio Sport Corporate</h3>
         <ul class="list-unstyled footer-links">
-          <li><a href="#">Studio Center : créez votre studio</a></li>
-          <li><a href="#">Offres Spéciales C.E.</a></li>
-          <li><a href="#">Devenir partenaire</a></li>
+          <li><a href="accueil.html">Studio Center : créez votre studio</a></li>
+          <li><a href="404.html">Offres Spéciales C.E.</a></li>
+          <li><a href="404.html">Devenir partenaire</a></li>
         </ul>
       </div>
 
@@ -363,14 +370,14 @@
       <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
         <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Fitness, CrossFit et Training au Pays Basque</h3>
         <p class="fw-bold">
-          <a href="#">Coach personnel de sport à Biarritz</a>,
-          <a href="#">Coach personnel de sport à Anglet</a>,
-          <a href="#">Salle de sport BAB</a>,
-          <a href="#">Fitness à Biarritz</a>,
-          <a href="#">Sessions de fitness à Anglet</a>,
-          <a href="#">Fitness sur le BAB</a>,
-          <a href="#">Coach sportif à Bayonne</a>,
-          <a href="#">Fitness personnalisé à Anglet</a>
+          <a href="404.html">Coach personnel de sport à Biarritz</a>,
+          <a href="404.html">Coach personnel de sport à Anglet</a>,
+          <a href="404.html">Salle de sport BAB</a>,
+          <a href="404.html">Fitness à Biarritz</a>,
+          <a href="404.html">Sessions de fitness à Anglet</a>,
+          <a href="404.html">Fitness sur le BAB</a>,
+          <a href="404.html">Coach sportif à Bayonne</a>,
+          <a href="404.html">Fitness personnalisé à Anglet</a>
         </p>
       </div>
     </div>
