@@ -86,3 +86,23 @@ function RegexTest(input, regex, message) {
         errorDiv.textContent = message;
     }
 }
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (event) {
+  let allValid = true;
+
+  inputs.forEach(input => {
+    if (!input.element.classList.contains("is-valid")) {
+      allValid = false;
+    }
+  });
+
+  if (allValid) {
+    alert("Formulaire soumis avec succès !");
+  } else {
+    event.preventDefault();
+    alert("Veuillez corriger les erreurs avant de soumettre le formulaire.");
+  }
+});
+
