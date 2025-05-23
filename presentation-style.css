@@ -1,0 +1,341 @@
+/* ===== Global Variables ===== */
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --heading-font: 'BEBAS NEUE';
+  --gold: #CFAD6C;
+  --white: #ffffff;
+  --light: #dddddd;
+  --fs-15: 0.938rem;
+  --fs-13: 0.8rem;
+  --fs-11: 0.7rem;
+}
+
+/* ===== Global Typography ===== */
+body {
+  font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+/* ===== Links ===== */
+a {
+  color: #dddddd;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* Text size */
+.large {
+  font-size: var(--fs-15);
+}
+
+.medium {
+  font-size: var(--fs-13);
+}
+
+.small {
+  font-size: var(--fs-11);
+}
+
+/* Icon dimensions */
+.width20 {
+  width: 20px;
+  height: 20px;
+}
+
+/* Logo dimensions */
+.logowidth {
+  width: 9.375rem;
+  height: 3.75rem;
+}
+
+/* Style for dropdown links */
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover color effect (dropdown menu) */
+.gold-hover:hover {
+  background-color: transparent !important;
+  color: #CFAD6C !important;
+}
+
+/* Hover animation for navigation links */
+.nav-hover {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 24px 16px;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.nav-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #CFAD6C;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.nav-hover:hover::before {
+  width: 100%;
+}
+
+.nav-hover:hover {
+  color: black;
+}
+
+/* Force display for navbar content */
+#navbarSupportedContent {
+  width: 100%;
+}
+
+/* Styling for "EN" language switcher */
+.lang-ribbon {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: inline-block;
+  background-color: #CFAD6C;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+/* ===== Buttons ===== */
+.btn-gold {
+  background-color: var(--gold);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.85rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  font-size: var(--fs-15);
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 200px;
+  max-width: 100%;
+}
+
+.btn-gold:hover {
+  background-color: #c2a256;
+  color: white;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto 2rem auto;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--gold);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Carousel ===== */
+.carousel-indicators {
+  bottom: 10px;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+/* ===== Gallery ===== */
+.gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  border: 1px solid #525151;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Footer Styles ===== */
+footer h3 {
+  font-size: var(--fs-15);
+  letter-spacing: 1.2px;
+  font-family: var(--heading-font);
+}
+
+footer a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+.footer-links li {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.footer-links li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.footer-links li:hover::before {
+  color: var(--gold);
+}
+
+.instagram-button {
+  transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+  background-color: #eee;
+  color: var(--gold) !important;
+}
+
+/* ===== Responsive Styles for Mobile Screens ===== */
+@media (max-width: 1200px) {
+  .phone {
+    display: none !important;
+  }
+
+  .reseau {
+    display: none !important;
+  }
+
+  .large {
+    font-size: 14px !important;
+  }
+
+  #training .btn-gold {
+    font-size: 0.8rem;
+  }
+
+  #training .row {
+    flex-direction: column !important;
+  }
+
+  #training .col-lg-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .carousel-inner .carousel-item img {
+    max-width: 75% !important;
+  }
+
+  .navbar-brand.logowidth img {
+    width: 150px !important;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mr {
+    margin-right: 8rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent:not(.show) {
+    display: none !important;
+  }
+
+  .title {
+    justify-content: center !important;
+  }
+
+  .nav-hover {
+    padding: 5px 10px;
+  }
+
+  .navbar-toggler {
+    background-color: #CFAD6C;
+    padding: 0 0;
+  }
+
+  .footer-links li::before {
+    display: none;
+  }
+
+  .footer-links li {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  footer h3 {
+    white-space: normal;
+  }
+
+  footer .col-md-6,
+  footer .col-lg-4 {
+    text-align: center !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-collapse {
+    background-color: #212529;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 0 0 0 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .large {
+    font-size: 12px !important;
+  }
+}
