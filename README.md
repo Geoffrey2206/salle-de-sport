@@ -2,6 +2,8 @@
 
 ![image de présentation](/assets/img/accueil/slide_1.jpg)
 
+1. Présentation du projet.
+   
 Nom du projet : salle de sport – Le Sudio
 Description : Site web responsive et répondant aux normes d’accessibilités,
 permettant une expérience UX/UI afin de présenter les différents services et activités
@@ -17,6 +19,7 @@ Technologies utilisées :
 - JavaScript
 - Git & GitHub
 2. Architecture globale du site.
+  
 Le site est multipage et sera composé pour l’instant de 4 pages (Accueil,
 présentation, contact et une page 404 error) une mise en place pour des .
 Le code est découpé de manière modulaire : HTML pour la structure, CSS pour le
