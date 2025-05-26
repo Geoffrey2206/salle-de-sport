@@ -1,6 +1,6 @@
 # salle-de-sport
 
-![image de présentation](assets/accueil/slide_1.jpg)
+![image de présentation](/assets/img/accueil/slide_1.jpg)
 
 Nom du projet : salle de sport – Le Sudio
 Description : Site web responsive et répondant aux normes d’accessibilités,
