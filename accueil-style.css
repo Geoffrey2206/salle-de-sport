@@ -1,4 +1,5 @@
 /* Mise en place root pour police d'ecriture, couleur de texte et fond, ainsi que taille de texte. */
+
 :root {
   --main-font: 'Roboto', sans-serif;
   --heading-font: 'BEBAS NEUE';
@@ -6,9 +7,10 @@
   --white: #ffffff;
   --light: #dddddd;
   --dark-grey:  #282828;
-  --fs-15: 0.938rem;
-  --fs-13: 0.8rem; 
-  --fs-11: 0.7rem;
+  --fs-15: 1.25rem;
+  --fs-13: 1.125rem; 
+  --fs-11: 1rem;
+  --fs-10: 0.8rem;
 }
 /* Taille de texte */
 .large {
@@ -19,6 +21,15 @@
 }
 .small {
   font-size: var(--fs-11);
+}
+.xsmall {
+  font-size: var(--fs-10);
+}
+.p17{
+  font-size: 1.063rem;
+}
+.p15 {
+  font-size: 0.938rem ;
 }
 /* Police d'ecriture */
 .body {
@@ -191,14 +202,14 @@ h2 span{
 .card-contenaire{
    display: flex;
    flex-direction: column;
-   justify-content: space-between;  
-   padding: 2rem 0.5rem;
+   justify-content: end;  
+   padding: 1rem 2rem;
    height: 100%;
    text-align: center;
 }
-.card-contenaire a{
+/* .card-contenaire a{
   margin-top: auto;
-}
+} */
 .none{
     text-decoration: none;
 }
@@ -352,7 +363,7 @@ a {
 }
 
 .underline-hover:hover::after {
-  width: 27%;
+  width: 35%;
 }
 .fw-700{
   font-weight: 700;
