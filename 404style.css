@@ -4,6 +4,11 @@
   --gold: #CFAD6C;
   --white: #ffffff;
   --light: #dddddd;
+  --dark-grey:  #282828;
+  --fs-15: 1.25rem;
+  --fs-13: 1.125rem; 
+  --fs-11: 1rem;
+  --fs-10: 0.8rem;
 }
 
 body {
@@ -13,7 +18,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
-
+.background-perso{
+  height: 100vh;
+  background: linear-gradient(135deg, #4a4a4a, #2e2e2e), url('assets/img/404page/texture.png'); 
+  background-blend-mode: overlay; 
+  background-size: cover;
+}
+.colorTitle{
+  color: var(--light);
+}
 .error-code {
   display: inline-block;
   transition: transform 1.5s ease-in-out;
@@ -40,4 +53,18 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   transform: scale(1.05);
   transition: all 0.3s ease;
+}
+@media (max-width: 768px){
+.fs-responsive{
+  font-size: 1.1rem !important;
+}
+.btn-gold{
+  padding: 0.4rem 0.8rem !important;
+  font-size: 0.8rem !important;
+}
+.w-75{
+  width: 80% !important;
+}
+}
+
 }
