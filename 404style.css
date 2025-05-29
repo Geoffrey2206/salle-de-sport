@@ -18,6 +18,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
+/* création d'un fond qui va se faire en dégradé avec deux couleurs paramétré et qui va s'adapter a l'image appeller. */
 .background-perso{
   height: 100vh;
   background: linear-gradient(135deg, #4a4a4a, #2e2e2e), url('assets/img/404page/texture.png'); 
@@ -27,16 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 .colorTitle{
   color: var(--light);
 }
-.error-code {
-  display: inline-block;
-  transition: transform 1.5s ease-in-out;
-  font-size: 120px;
-  font-weight: bold;
-  color: var(--gold);
-  font-family: var(--heading-font);
-  line-height: 1;
-}
-
+/* Création du bouton de renvoie vers la page d'accueil avec animation sous desktop */
 .btn-gold {
   background-color: var(--gold);
   color: black;
@@ -47,13 +39,14 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   transition: background-color 0.3s ease;
 }
-
 .btn-gold:hover {
   background-color: #c2a256;
   color: white;
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
+
+/* mise en place du responsive pour mobile. */
 @media (max-width: 768px){
 .fs-responsive{
   font-size: 1.1rem !important;
