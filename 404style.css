@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* reset du css de base pour harmoniser les différents navigateurs */
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 :root {
   --main-font: 'Roboto', sans-serif;
   --heading-font: 'BEBAS NEUE';
@@ -38,6 +51,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   border: none;
   transition: background-color 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .btn-gold:hover {
   background-color: #c2a256;
