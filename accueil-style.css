@@ -1,4 +1,18 @@
-/* Mise en place root pour police d'ecriture, couleur de texte et fond, ainsi que taille de texte. */
+ /* parametrage par defaut de l'affichage */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* reset du css de base pour harmoniser les différents navigateurs */
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+ /* Mise en place root pour police d'ecriture, couleur de texte et fond, ainsi que taille de texte. */
 
 :root {
   --main-font: 'Roboto', sans-serif;
@@ -30,6 +44,12 @@
 }
 .p15 {
   font-size: 0.938rem ;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-500{
+  font-weight: 600;
 }
 /* Police d'ecriture */
 .body {
@@ -99,7 +119,7 @@
   background-color: #CFAD6C;
   color: black;
   text-align: center;
-  padding: 10px 10px;
+  padding: 6px 4px;
   font-weight: bold;
   text-decoration: underline;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); /* forme de pointe */
@@ -144,20 +164,20 @@ header {
 
 /* Supprime les bordures et rend tout clean */
 .custom-link {
-    border: none;
-    padding: 10px 10px;
-    font-weight: bold;
-    color: white !important; /* texte blanc par défaut */
+  border: none;
+  padding: 10px 10px;
+  font-weight: bold;
+  color: white !important; /* texte blanc par défaut */
 
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* pas de souligné */
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* pas de souligné */
 }
 
 /* Pas de soulignement */
 .custom-link:hover,
 .custom-link:focus {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 /* Alignement du titre sans <br> */
 h2 span{
@@ -185,38 +205,111 @@ h2 span{
     height: 60vh;
 }
 .bg-corde{
-    background-image: url(assets/img/accueil/bg_activite_3.jpg);
-    background-size: cover;
-    height: 60vh;
+  background-image: url(assets/img/accueil/bg_activite_3.jpg);
+  background-size: cover;
+  height: 60vh;
 }
 .bg-haltere{
     background-image: url(assets/img/accueil/bg_activite_4.jpg);
     height: 60vh;
     background-size: cover;
-}
-.bg-color{
-  background-color: #282828;
-  height: 70vh;
-}
-/*  */
-.card-contenaire{
-   display: flex;
-   flex-direction: column;
-   justify-content: end;  
-   padding: 1rem 2rem;
-   height: 100%;
-   text-align: center;
-}
-/* .card-contenaire a{
-  margin-top: auto;
-} */
-.none{
+  }
+  .bg-color{
+    background-color: #282828;
+    height: 70vh;
+  }
+  /*  */
+  .card-contenaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;  
+    padding: 1rem 2rem;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .none{
     text-decoration: none;
-}
-
-/* Footer heading (h3) styles */
-footer h3 {
-  font-size: 18px;
+  }
+  /* Mise en place du trait sous les titres */
+  .gold-underline {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2c2c2c;
+  }
+  
+  .gold-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 40px; /* espace entre le texte et le trait */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* longueur du trait */
+    height: 3px;  /* épaisseur du trait */
+    background-color: #C9A74D; 
+  }
+  /* tous sa pour faire un trait animé sous un lien! */
+  .act-underline-hover {
+    position: relative;
+    display: inline-block; /* pour que la taille s'adapte au texte */
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  .act-underline-hover:hover{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .act-underline-hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 2px;
+    width: 10%;
+    background-color:white;
+    transition: width 0.3s ease;
+  }
+  
+  .act-underline-hover:hover::after {
+    width: 50%;
+  }
+  /* trait avec animation dans la catégorie actualité */
+  .underline-hover {
+    position: relative;
+    display: inline-block; /* pour que la taille s'adapte au texte */
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+  }
+  .underline-hover:hover{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .underline-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 10%;
+    background-color:black;
+    transition: width 0.3s ease;
+  }
+  
+  .underline-hover:hover::after {
+    width: 35%;
+  }
+  
+  /* Footer heading (h3) styles */
+  footer h3 {
+    font-size: 18px;
   letter-spacing: 1.2px;
   font-family: var(--heading-font);
 }
@@ -251,6 +344,16 @@ footer a:hover {
 
 .footer-links li:hover::before {
   color: var(--gold);
+}
+.footer-logo {
+  width: 30px;
+  height: auto;
+}
+.footer-agence {
+  font-size: 12px;
+}
+.footer-agence-logo{
+  height: 20px;
 }
 
 /* Instagram button in the image section */
@@ -292,86 +395,6 @@ a {
   letter-spacing: 1px;
 }
 
-.gold-underline {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #2c2c2c;
-}
-
-.gold-underline::after {
-  content: "";
-  position: absolute;
-  bottom: 40px; /* espace entre le texte et le trait */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px; /* longueur du trait */
-  height: 3px;  /* épaisseur du trait */
-  background-color: #C9A74D; 
-}
-/* tous sa pour faire un trait animé sous un lien! */
-.act-underline-hover {
-  position: relative;
-  display: inline-block; /* pour que la taille s'adapte au texte */
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
-.act-underline-hover:hover{
-  color: white;
-  text-decoration: none;
-}
-
-.act-underline-hover::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -5px;
-  height: 2px;
-  width: 10%;
-  background-color:white;
-  transition: width 0.3s ease;
-}
-
-.act-underline-hover:hover::after {
-  width: 50%;
-}
-.underline-hover {
-  position: relative;
-  display: inline-block; /* pour que la taille s'adapte au texte */
-  cursor: pointer;
-  color: black;
-  text-decoration: none;
-}
-.underline-hover:hover{
-  color: black;
-  text-decoration: none;
-}
-
-.underline-hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 10%;
-  background-color:black;
-  transition: width 0.3s ease;
-}
-
-.underline-hover:hover::after {
-  width: 35%;
-}
-.fw-700{
-  font-weight: 700;
-}
-.fw-500{
-  font-weight: 600;
-}
-
 /* Responsive adjustments for mobile screens */
 @media (max-width: 1200px) {
   .phone{
@@ -391,13 +414,6 @@ a {
     margin-left: 1.5rem; 
   }
 }
-
-@media (max-width: 1200px) and (min-width: 992px) {
-.mg {
-  margin-left: 5.5rem !important;
-  margin-right: 5.5rem !important;
-}
-  }
 
 @media (max-width: 992px) {
   
@@ -476,5 +492,10 @@ a {
   /* changement de taille du bouton slider */
   .btn-medium{
     font-size: var(--fs-13);
+  }
+  .posabsres {
+    position: absolute;
+    top: 0;
+    right: 0 !important;
   }
 }

@@ -1,35 +1,69 @@
+/* parametrage par defaut de l'affichage */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* reset du css de base pour harmoniser les différents navigateurs */
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* Base styles */  
   :root {
-    --main-font: 'Roboto', sans-serif;
-    --heading-font: 'Bebas Neue', cursive;
-    --gold: #CFAD6C;
-    --white: #ffffff;
-    --light: #dddddd;
-    --dark-grey:  #282828;
-    --fs-15: 0.938rem;
-    --fs-13: 0.8rem; 
-    --fs-11: 0.7rem;
-  }
+   --main-font: 'Roboto', sans-serif;
+  --heading-font: 'BEBAS NEUE';
+  --gold: #CFAD6C;
+  --white: #ffffff;
+  --light: #dddddd;
+  --dark-grey:  #282828;
+  --fs-15: 1.25rem;
+  --fs-13: 1.125rem; 
+  --fs-11: 1rem;
+  --fs-10: 0.8rem;
+}
 
-  body {
-    
-    overflow-x: hidden;
-    background-color: var(--light-bg);
-    color: var(--light-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: var(--main-font);
-  }
+/* Taille de texte */
+.large {
+  font-size: var(--fs-15);
+}
+.medium {
+  font-size: var(--fs-13);
+}
+.small {
+  font-size: var(--fs-11);
+}
+.xsmall {
+  font-size: var(--fs-10);
+}
+/* Police d'ecriture */
+.body {
+  font-family: var(--main-font);
+}
+.font-text{
+  font-family: var(--heading-font);
+}
+
+body {
   
+  overflow-x: hidden;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--main-font);
+}
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
   }
   
   
-  body.dark-mode {
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-  }
   
   /* Theme Toggle Switch */
   .theme-switch-wrapper {
@@ -152,23 +186,6 @@
   /* HEADER/NAVBAR */
   /* Mise en place root pour police d'ecriture, couleur de texte et fond, ainsi que taille de texte. */
 
-/* Taille de texte */
-.large {
-  font-size: var(--fs-15);
-}
-.medium {
-  font-size: var(--fs-13);
-}
-.small {
-  font-size: var(--fs-11);
-}
-/* Police d'ecriture */
-.body {
-  font-family: var(--main-font);
-}
-.font-text{
-  font-family: var(--heading-font);
-}
 .header-image {
   width: 100%;
   height: auto;
@@ -193,6 +210,9 @@
 .logowidth{
   width: 9.375rem;
   height:3.75rem;
+}
+.mwidth80 {
+  max-width: 80%;
 }
 /*animation couleur au passage de la souris (menu déroulant)*/
 .gold-hover:hover {
@@ -243,7 +263,7 @@
   background-color: #CFAD6C;
   color: black;
   text-align: center;
-  padding: 10px 10px;
+  padding: 6px 4px;
   font-weight: bold;
   text-decoration: underline;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); /* forme de pointe */
@@ -283,113 +303,161 @@
     
     height: 100%;
   }
+  .gold-underline {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+}
+
+.gold-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0px; /* espace entre le texte et le trait */
+  left: 0%;
+  width: 100px; /* longueur du trait */
+  height: 3px;  /* épaisseur du trait */
+  background-color: #C9A74D; 
+}
   
-  .dark-mode .contact-card {
-    background-color: var(--dark-card-bg);
-    color: var(--dark-text);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
+.dark-mode .contact-card {
+  background-color: var(--dark-card-bg);
+  color: var(--dark-text);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 0;
+  background-color: #f0f0f0;
+}
+
+.dark-mode .form-control {
+  background-color: #2d2d2d;
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+.form-control:focus {
+  border-color: #d5b26a;
+  box-shadow: 0 0 0 0.25rem rgba(213, 178, 106, 0.25);
+}
+
+.contact-card form .row > .col-md-6,
+.contact-card form .col-12 {
+  margin-bottom: 1.25rem; /* ajuste ici si tu veux plus ou moins d'espace */
+}
+
+.contact-card form textarea {
+  resize: none;
+}
+
   
-  .form-control {
-    padding: 0.75rem 1rem;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    margin-bottom: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .dark-mode .form-control {
-    background-color: #2d2d2d;
-    border-color: var(--dark-border);
-    color: var(--dark-text);
-  }
-  
-  .form-control:focus {
-    border-color: #d5b26a;
-    box-shadow: 0 0 0 0.25rem rgba(213, 178, 106, 0.25);
-  }
-  
-  .contact-card form .row > .col-md-6,
-  .contact-card form .col-12 {
-    margin-bottom: 1.25rem; /* ajuste ici si tu veux plus ou moins d'espace */
-  }
-  
-  .contact-card form textarea {
-    resize: none;
-  }
-  
-  
-  .btn-submit {
-    background-color: #d5b26a;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    display: block;
-    margin-top: 0.5rem;
-    transition: background-color 0.2s;
-  }
-  
-  .btn-submit:hover {
-    background-color: #c49d5a;
-    color: black;
-  }
-  
-  /* Map and Promo sections */
-  .map-section,
-  .promo-section {
-    line-height: 0;
-  }
-  
-  /* Footer */
-  footer h3 {
-    font-size: 18px;
-    letter-spacing: 1.2px;
-    font-family: var(--heading-font);
-  }
-  
-  /* Footer links */
-  footer a {
-    color: var(--light);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease;
-  }
-  
-  footer a:hover {
-    color: var(--gold);
-  }
-  
-  /* Footer links with dash before them */
-  .footer-links li {
-    position: relative;
-    margin-bottom: 10px;
-    text-align: left;
-    padding-left: 1.2rem;
-  }
-  
-  .footer-links li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: var(--white);
-    font-weight: bold;
-    transition: color 0.2s;
-  }
-  
-  .footer-links li:hover::before {
-    color: var(--gold);
-  }
-  
-  /* Instagram button in the image section */
-  .instagram-button {
-    transition: background-color 0.3s ease;
-  }
-  
-  .instagram-button:hover {
-    background-color: #eee;
-    color: var(--gold) !important;
-  }
+.btn-submit {
+  background-color: #d5b26a;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  display: block;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #c49d5a;
+  color: black;
+}
+
+/* Map and Promo sections */
+.map-section,
+.promo-section {
+  line-height: 0;
+}
+  /* ===== Buttons ===== */
+.btn-gold {
+  background-color: var(--gold);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  font-size: var(--fs-13);
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 200px;
+  max-width: 100%;
+}
+
+.btn-gold:hover {
+  background-color: #c2a256;
+  color: white;
+}
+/* Footer */
+footer h3 {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  font-family: var(--heading-font);
+}
+
+/* Footer links */
+footer a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+/* Footer links with dash before them */
+.footer-links li {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.footer-links li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.footer-links li:hover::before {
+  color: var(--gold);
+}
+
+/* Instagram button in the image section */
+.instagram-button {
+  transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+  background-color: #eee;
+  color: var(--gold) !important;
+}
+.footer-logo {
+  width: 30px;
+  height: auto;
+}
+.footer-agence {
+  font-size: 12px;
+}
+.footer-agence-logo{
+  height: 20px;
+}
 
 /* Mise en place responsive */
 
@@ -401,13 +469,6 @@
   .navbar-brand { margin-left: 1.5rem; }
   .navbar-custom .nav-link { padding: 14px 12px 12px 12px; font-size: 1rem; }
   .navbar-custom .right-info { gap: 12px; }
-}
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .mg {
-    margin-left: 5.5rem !important;
-    margin-right: 5.5rem !important;
-  }
 }
 
 @media (max-width: 992px) {

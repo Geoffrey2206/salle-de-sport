@@ -1,17 +1,33 @@
-/* ===== Global Variables ===== */
+/* parametrage par defaut de l'affichage */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* reset du css de base pour harmoniser les différents navigateurs */
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*mise en place des roots*/
 :root {
   --main-font: 'Roboto', sans-serif;
   --heading-font: 'BEBAS NEUE';
   --gold: #CFAD6C;
   --white: #ffffff;
   --light: #dddddd;
-  --fs-15: 0.938rem;
-  --fs-13: 0.8rem;
-  --fs-11: 0.7rem;
+  --dark-grey:  #282828;
+  --fs-15: 1.25rem;
+  --fs-13: 1.125rem; 
+  --fs-11: 1rem;
+  --fs-10: 0.8rem;
 }
 
 /* ===== Global Typography ===== */
-body {
+.body {
   font-family: var(--main-font);
 }
 
@@ -42,6 +58,9 @@ a:hover {
 .small {
   font-size: var(--fs-11);
 }
+.xsmall {
+  font-size: var(--fs-10);
+}
 
 /* Icon dimensions */
 .width20 {
@@ -53,6 +72,17 @@ a:hover {
 .logowidth {
   width: 9.375rem;
   height: 3.75rem;
+}
+/* mise en place du banner */
+.banner {
+  background-image: url('assets/img/visuel_3.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.banner-custom{
+  background: rgba(0, 0, 0, 0.2); 
+  height: 100%;
 }
 
 /* Style for dropdown links */
@@ -102,9 +132,11 @@ a:hover {
 
 /* Force display for navbar content */
 #navbarSupportedContent {
-  width: 100%;
+  display: contents!important;
 }
-
+.nowrap {
+  white-space: nowrap;
+}
 /* Styling for "EN" language switcher */
 .lang-ribbon {
   position: absolute;
@@ -114,10 +146,16 @@ a:hover {
   background-color: #CFAD6C;
   color: black;
   text-align: center;
-  padding: 10px 10px;
+  padding: 6px 4px;
   font-weight: bold;
   text-decoration: underline;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+.bg-banner {
+  background-image: url(assets/img/visuel_3.jpg);
+  height: 18.75rem;
+  background-size: cover;
+  background-position: center;
 }
 
 /* ===== Buttons ===== */
@@ -125,17 +163,14 @@ a:hover {
   background-color: var(--gold);
   color: white;
   text-transform: uppercase;
-  font-weight: 700;
-  padding: 0.85rem 1.2rem;
   border: none;
   border-radius: 0;
-  font-size: var(--fs-15);
+  font-size: var(--fs-13);
   line-height: 1.3;
   letter-spacing: 0.5px;
   text-align: center;
   transition: background-color 0.3s ease;
   display: inline-block;
-  white-space: nowrap;
   min-width: 200px;
   max-width: 100%;
 }
@@ -150,8 +185,8 @@ a:hover {
   display: inline-block;
   position: relative;
   text-align: center;
+  font-weight: bold;
   font-size: 2rem;
-  margin: 0 auto 2rem auto;
 }
 
 .section-title::after {
@@ -223,6 +258,16 @@ footer a:hover {
 .footer-links li:hover::before {
   color: var(--gold);
 }
+  .footer-logo {
+    width: 30px;
+    height: auto;
+  }
+  .footer-agence {
+    font-size: 12px;
+  }
+  .footer-agence-logo{
+    height: 20px;
+  }
 
 .instagram-button {
   transition: background-color 0.3s ease;
@@ -332,10 +377,31 @@ footer a:hover {
     padding: 0.5rem 1rem;
     white-space: nowrap;
   }
+  .menu-mobile {
+    background-color: var(--dark-grey) !important;
+    padding: 1rem;
+    width: 100%;
+    z-index: 9999;
+  }
+  .menu-mible .nav-link{
+    color: white !important;
+  }
+  .menu-mobile .dropdow-menu {
+    background-color: var(--dark-grey) !important;
+  }
+  .menu-mobile .dropdown-item {
+    color: white !important;
+  }
 }
+
 
 @media (max-width: 576px) {
   .large {
     font-size: 12px !important;
+  }
+  .posabsres {
+    position: absolute;
+    top: 0;
+    right: 0 !important;
   }
 }

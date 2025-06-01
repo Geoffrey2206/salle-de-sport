@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Page de Présentation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,8 +15,8 @@
 <!-- HEADER -->
 <header> 
   <!-- Banner -->
-  <div class="banner" style="background-image: url('assets/img/visuel_3.jpg'); height: 300px; background-size: cover; background-position: center;">
-    <div style="background: rgba(0, 0, 0, 0.2); height: 100%;">
+  <div class="bg-banner position-relative">
+    <div>
       <!-- Navigation menu -->
       <div class="title z-3 position-absolute w-100 px-0">
         <nav class="title navbar navbar-expand-lg w-100 justify-content-lg-around align-items-lg-center align-items-baseline bebas"> 
@@ -25,51 +25,51 @@
           <a class="navbar-brand logowidth" href="accueil.html">
             <img src="assets/img/navigation/logo.png" alt="logo">
           </a>
-            <div>
- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <div style="display: contents;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>
+              </button>
 
-            <div class="collapse navbar-collapse centered-menu mr" id="navbarSupportedContent">
-              <!-- Navigation items -->
-              <ul class="navbar-nav px-2 mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link nav-hover body large" href="404.html">L'ÉQUIPE</a>
-                </li>
-                
-                <!-- Dropdown menu with activity pages -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle nav-hover body large" href="presentation.html" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
-                  <ul class="dropdown-menu bg-dark body large">
-                    <li><a class="dropdown-item text-white gold-hover text-decoration-non" href="404.html">LE CYCLING</a></li>
-                    <li><a class="dropdown-item text-white gold-hover" href="presentation.html#training">LE TRAINING FONCTIONNEL</a></li>
-                    <li><a class="dropdown-item text-white gold-hover" href="404.html">LE CROSSFIT</a></li>
-                    <li><a class="dropdown-item text-white gold-hover" href="404.html">PERSONAL TRAINING - COACH PERSONNEL</a></li>
+                <div class="collapse navbar-collapse centered-menu mr" id="navbarSupportedContent">
+                  <!-- Navigation items -->
+                  <ul class="navbar-nav px-2 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active nav-hover body xsmall" href="404.html">L'ÉQUIPE</a>
+                    </li>
+                    
+                    <!-- Dropdown menu with activity pages -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle nav-hover body xsmall" href="presentation.html" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
+                      <ul class="dropdown-menu bg-dark body xsmall">
+                        <li><a class="dropdown-item text-white gold-hover text-decoration-non" href="404.html">LE CYCLING</a></li>
+                        <li><a class="dropdown-item text-white gold-hover" href="presentation.html#training">LE TRAINING FONCTIONNEL</a></li>
+                        <li><a class="dropdown-item text-white gold-hover" href="404.html">LE CROSSFIT</a></li>
+                        <li><a class="dropdown-item text-white gold-hover" href="404.html">PERSONAL TRAINING - COACH PERSONNEL</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-hover body xsmall" href="404.html">NOS OFFRES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-hover body xsmall" href="404.html">PLANNING</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-hover body xsmall" href="404.html">LE BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-hover body xsmall" href="contact.html">CONTACT</a>
+                    </li>
                   </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link nav-hover body large" href="404.html">NOS OFFRES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-hover body large" href="404.html">PLANNING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-hover body large" href="404.html">LE BLOG</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-hover body large" href="contact.html">CONTACT</a>
-                </li>
-              </ul>
-          </div>
+              </div>
             </div>
            
 
           <!-- Phone number + icon -->
           <div class="phone text-white d-lg-block d-none" style="white-space: nowrap;">
             <img src="assets/img/navigation/phone.svg" alt="phone icon" class="width20">
-            <p class="d-inline body large">05 59 47 84 18</p>
+            <p class="d-inline body xsmall">05 59 47 84 18</p>
           </div>
 
           <!-- Social media icons -->
@@ -87,7 +87,7 @@
 
           <!-- Language switch icon -->
           <div style="display: contents;">
-            <a href="404.html" class="lang-ribbon small body">EN</a>
+            <a href="404.html" class="lang-ribbon xsmall body posabsres">EN</a>
           </div>
 
         </nav>
@@ -97,39 +97,39 @@
 </header>
 
 <!-- SECTION 1: Functional Training -->
-<section id="training" class="py-5 bg-light">
+<section id="training">
   <div class="container">
     <div class="text-center">
-      <h2 class="text-uppercase fw-bold text-center position-relative d-inline-block mx-auto section-title">
-        Le Training Fonctionnel
+      <h2 class="fs-5 body py-5 section-title">
+        LE TRAINING FONCTIONNEL
       </h2>
     </div>
 
     <div class="row align-items-center">
       <!-- Text -->
       <div class="col-12 col-lg-6 text-center text-lg-start ps-lg-5">
-        <p style="text-align: justify;">
+        <p class="text-start medium">
           <strong>Le training fonctionnel</strong> est une méthode d'entraînement moderne, complète et accessible à tous.
           Il sollicite l’ensemble des <strong>groupes musculaires</strong> grâce à des <em>exercices dynamiques</em> et naturels,
           inspirés des gestes de la vie quotidienne. Ce type d'entraînement améliore la <strong>force fonctionnelle</strong>,
           la mobilité articulaire, l’équilibre et la posture de façon progressive et durable.
         </p>
-        <p style="text-align: justify;">
+        <p class="text-start medium">
           Conçu pour tous les niveaux, du débutant au sportif confirmé, le training fonctionnel permet de
           <strong>tonifier la silhouette</strong>, de <strong>renforcer les muscles profonds</strong>, de
           <strong>prévenir les blessures</strong> et d’<strong>optimiser les performances physiques</strong>.
           En rendant les mouvements du quotidien plus fluides, plus sûrs et moins contraignants, il contribue aussi à une
           <em>meilleure qualité de vie</em>.
         </p>
-        <p style="text-align: justify;" class="mb-5">
+        <p class="text-start medium mb-5">
           Nos <strong>coach sportifs certifiés</strong> vous accompagnent dans un cadre sécurisé et motivant, avec des
           <strong>séances personnalisées</strong> adaptées à vos besoins, à votre niveau et à vos objectifs spécifiques.
           Chaque séance est conçue pour garantir des <strong>progrès visibles</strong> et une pratique durable, à votre rythme.
         </p>
         <!-- Contact and Offres Buttons -->
         <div class="training-buttons d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 gap-md-5 mb-4">
-          <a href="404.html" class="btn btn-gold">Contact<br>et réservation</a>
-          <a href="contact.html" class="btn btn-gold">Voir nos offres<br>et formules</a>
+          <a href="contact.html" class="btn btn-gold body">Contact et réservation</a>
+          <a href="404.html" class="btn btn-gold body">Voir nos <span>offres et formules</span></a>
         </div>
       </div>
 
@@ -171,42 +171,42 @@
 <section id="ateliers" class="py-5 bg-light">
   <div class="container">
     <div class="text-center">
-      <h2 class="text-uppercase fw-bold text-center position-relative d-inline-block mx-auto section-title">Les Ateliers Disponibles</h2>
+      <h2 class="fs-5 body py-5 section-title">LES ATELIERS DISPONIBLES</h2>
     </div>
 
     <div class="row text-center">
       <!-- TRX Core -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-4 d-flex flex-column">
         <img src="assets/img/ateliers/trx_core.png" alt="TRX CORE" class="img-fluid rounded mb-3">
         <h4>TRX CORE</h4>
         <p>Renforcez votre sangle abdominale et développez votre force fonctionnelle grâce à notre atelier TRX CORE.
           Basé sur des exercices en suspension, ce cours améliore la stabilité, l'équilibre et la posture. Idéal pour renforcer le centre du corps en profondeur.
         </p>
-        <p><strong>Durée :</strong> 45 minutes</p>
+        <p class="mt-auto"><strong>Durée :</strong> 45 minutes</p>
       </div>
 
       <!-- Boxe -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-4 d-flex flex-column">
         <img src="assets/img/ateliers/boxe.png" alt="Boxe" class="img-fluid rounded mb-3">
         <h4>BOXE</h4>
         <p>Découvrez un entraînement cardio-complet inspiré de la boxe et du MMA. Améliorez votre coordination, votre agilité, votre force et votre endurance dans un cadre dynamique et motivant. Parfait pour se défouler, se surpasser et brûler un maximum de calories.</p>
-        <p><strong>Durée :</strong> 30 minutes</p>
+        <p class="mt-auto"><strong>Durée :</strong> 30 minutes</p>
       </div>
 
       <!-- HIIT -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-4 d-flex flex-column">
         <img src="assets/img/ateliers/hiit.png" alt="HIIT" class="img-fluid rounded mb-3">
         <h4>HIIT</h4>
         <p>Brûlez un maximum de calories en un minimum de temps avec le HIIT ! Des intervalles courts et intenses pour améliorer la condition physique, tonifier le corps, renforcer votre endurance et booster le métabolisme. Accessible à tous les niveaux.</p>
-        <p><strong>Durée :</strong> 30 minutes</p>
+        <p class="mt-auto"><strong>Durée :</strong> 30 minutes</p>
       </div>
 
       <!-- TRX Fusion -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-4 d-flex flex-column">
         <img src="assets/img/ateliers/trx_fusion.png" alt="TRX FUSION" class="img-fluid rounded mb-3">
         <h4>TRX FUSION</h4>
         <p>Un entraînement complet du corps combinant le TRX et des mouvements fonctionnels variés et dynamiques. Développez force, mobilité, coordination et stabilité dans un atelier stimulant qui sollicite tous les groupes musculaires. Résultats visibles et garantis !</p>
-        <p><strong>Durée :</strong> 30 minutes</p>
+        <p class="mt-auto"><strong>Durée :</strong> 30 minutes</p>
       </div>
     </div>
   </div>
@@ -216,7 +216,7 @@
 <section id="galerie" class="pt-5 bg-body-secondary">
   <div class="container" style="padding-bottom: 80px;">
     <div class="text-center mb-4">
-      <h2 class="text-uppercase fw-bold position-relative d-inline-block section-title">Notre Galerie</h2>
+      <h2 class="fs-5 body py-5 section-title">NOTRE GALERIE</h2>
     </div>
     <div class="row g-4">
       <!-- Gallery image 1 -->
@@ -332,34 +332,35 @@
       @STUDIOBIARRITZ
     </a>
   </div>
+  <div><p>test</p></div>
 
   <!-- Footer Content -->
-  <div class="container pb-4">
+  <div class="container pb-4 h-auto">
     <div class="row gy-4">
       <!-- Column 1 -->
       <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-baseline justify-content-center justify-content-md-start gap-md-3 text-center text-md-start mb-3" style="margin-top: -15px;">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-baseline justify-content-center justify-content-md-start gap-md-3 text-center text-md-start mb-3">
           <!-- Logo -->
           <div>
-            <img src="assets/img/footer/logo_footer.png" alt="logofooter" style="width: 30px; height: auto;">
+            <img src="assets/img/footer/logo_footer.png" alt="logofooter" class="footer-logo">
           </div>
           <!-- Title -->
-          <div class="mt-2 mt-md-0">
-            <h3 class="text-uppercase fw-bold mb-3 text-white">À PROPOS</h3>
+          <div class="mt-auto mt-md-0">
+            <h3 class="text-uppercase text-white font-text fs-4">À PROPOS</h3>
           </div>
         </div>
-        <p class="mb-1"><strong>2018 © Studio Sport Biarritz</strong></p>
-        <p class="mb-1">Salle de sport, de fitness et de crossfit<br>à Biarritz Pays basque.</p>
-        <p class="mb-1">RCS : 000 000 000</p>
-        <p class="mb-4 mb-md-0">
+        <p class="mb-1 body xsmall"><strong>2018 © Studio Sport Biarritz</strong></p>
+        <p class="mb-1 body xsmall">Salle de sport, de fitness et de crossfit<br>à Biarritz Pays basque.</p>
+        <p class="mb-1 body xsmall">RCS : 000 000 000</p>
+        <p class="mb-4 mb-md-0 body xsmall">
           <a href="404.html" class="fw-bold" style="text-decoration: underline;">Mentions légales</a>
         </p>
       </div>
 
       <!-- Column 2 -->
       <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-        <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Studio Sport Corporate</h3>
-        <ul class="list-unstyled footer-links">
+        <h3 class="text-uppercase mb-md-5 text-wrap text-white font-text fs-4">Studio Sport Corporate</h3>
+        <ul class="list-unstyled footer-links body xsmall">
           <li><a href="accueil.html">Studio Center : créez votre studio</a></li>
           <li><a href="404.html">Offres Spéciales C.E.</a></li>
           <li><a href="404.html">Devenir partenaire</a></li>
@@ -367,9 +368,9 @@
       </div>
 
       <!-- Column 3 -->
-      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-        <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Fitness, CrossFit et Training au Pays Basque</h3>
-        <p class="fw-bold">
+      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start ">
+        <h3 class="text-uppercase mb-md-5 text-wrap text-white text-center fs-4">Fitness, CrossFit et Training au Pays Basque</h3>
+        <p class="fw-bold body xsmall">
           <a href="404.html">Coach personnel de sport à Biarritz</a>,
           <a href="404.html">Coach personnel de sport à Anglet</a>,
           <a href="404.html">Salle de sport BAB</a>,
@@ -384,11 +385,11 @@
   </div>
 
   <!-- Footer Bottom -->
-  <div class="text-center py-3 px-2 bg-black small text-secondary text-center" style="font-size: 12px;">
+  <div class="text-center py-3 px-2 bg-black small text-secondary text-center footer-agence">
     <p class="mb-0 text-white">
       Un site créé par<br>
       <strong class="text-white">L'AGENCE 364 COM</strong>
-      <img src="assets/img/footer/364.png" alt="logoagence" class="align-middle ms-2" style="height: 20px;">
+      <img src="assets/img/footer/364.png" alt="logoagence" class="align-middle ms-2 footer-agence-logo">
     </p>
   </div>
 </footer>

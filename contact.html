@@ -2,10 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" />
   <title>Contact - Le Studio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="contact-style.css">
 </head>
 <body>
@@ -25,12 +27,12 @@
                 <!-- Les différents onglets de séléctions -->
                   <ul class=" navbar-nav px-2 mb-2 mb-lg-0">
                       <li class="nav-item">
-                          <a class="nav-link  nav-hover body large" href="#">L'ÉQUIPE</a>
+                          <a class="nav-link  nav-hover body xsmall" href="#">L'ÉQUIPE</a>
                       </li>
                       <!-- menu déroulant avec les différentes pages d'activités -->
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle nav-hover body large" href="presentation.html" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
-                          <ul class="dropdown-menu bg-dark body large">
+                          <a class="nav-link dropdown-toggle nav-hover body xsmall" href="presentation.html" data-bs-toggle="dropdown">LES ACTIVITÉS</a>
+                          <ul class="dropdown-menu bg-dark body xsmall">
                               <li><a class=" dropdown-item text-white gold-hover text-decoration-non " href="404.html">LE CYCLING</a></li>
                               <li><a class="dropdown-item text-white gold-hover  " href="presentation.html">LE TRAINING FONCTIONNEL</a></li>
                               <li><a class="dropdown-item text-white gold-hover" href="404.html">LE CROSSFIT</a></li>
@@ -38,17 +40,17 @@
                           </ul>
                       </li>
                       <li class="nav-item">
-                            <a class="nav-link nav-hover body large" href="404.html">NOS OFFRES</a>
+                            <a class="nav-link nav-hover body xsmall" href="404.html">NOS OFFRES</a>
                       </li>
                     
                       <li class="nav-item">
-                            <a class="nav-link nav-hover body large" href="404.html">PLANNING</a>
+                            <a class="nav-link nav-hover body xsmall" href="404.html">PLANNING</a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link nav-hover body large"  href="404.html">LE BLOG</a>
+                      <a class="nav-link nav-hover body xsmall"  href="404.html">LE BLOG</a>
                 </li>
                       <li class="nav-item">
-                            <a class="nav-link nav-hover body large" href="contact.html">CONTACT</a>
+                            <a class="nav-link nav-hover body xsmall" href="contact.html">CONTACT</a>
                       </li>
                   </ul>
               </div>
@@ -57,7 +59,7 @@
             <div class=" phone text-white d-lg-block d-none" 
             style="white-space: nowrap;">
                 <img src="assets/img/navigation/phone.svg" alt="icone portable" class="width20">
-                <p class="d-inline body large">05 59 47 84 18</p>
+                <p class="d-inline body xsmall">05 59 47 84 18</p>
             </div>
             <!--Réseaux sociaux icones-->
             <div class="reseau z-3 d-lg-flex align-items-center social-icons gap-2 d-none">
@@ -73,7 +75,7 @@
             </div>
               <!--Icone pour changer la langue de lecture en anglais-->
             <div style="display: contents; ">
-                <a href="404.html" class="lang-ribbon small body"  >EN</a>
+                <a href="404.html" class="lang-ribbon xsmall posabsres body"  >EN</a>
             </div>
     </nav>
   </div>   
@@ -85,35 +87,33 @@
       <div class="container">
         <div class="row g-4 d-flex justify-content-center">
           <div class="col-lg-3">
-            <div class="contact-card">
-              <h2 class="section-title mb-4">
-                <span class="border-bottom border-3 border-warning">Nos Coo</span>rdonnées
+            <div class="contact-card p-0">
+              <h2 class="section-title mb-4 fs-1 font-text gold-underline">NOS COORDONÉES
               </h2>
               <div class="mb-4">
-                <h5 class="mb-2 fw-bold">Studio Sport &amp; Coaching</h5>
+                <h5 class="mb-2 fw-bold large body">Studio Sport &amp; Coaching</h5>
 
-                <p class="mb-0">01 Allée Marie Politzer<br>64200 Biarritz</p>
+                <p class="mb-0 small body">01 Allée Marie Politzer 64200 Biarritz</p>
               </div>
               <div class="mb-4">
-                <h5 class="mb-2 fw-bold">Téléphone</h5>
-                <p class="mb-0">05 59 47 84 18</p>
+                <h5 class="mb-2 fw-bold large body">Téléphone</h5>
+                <p class="mb-0 small body">05 59 47 84 18</p>
               </div>
               <div class="mb-4">
-                <h5 class="mb-2 fw-bold">Horaires</h5>
+                <h5 class="mb-2 fw-bold large body">Horaires</h5>
 
-                <p class="mb-0">Lun - Ven : 8h à 14h, 16h à 21h<br>Samedi : 10h à 13h</p>
+                <p class="mb-0 small body">Lun - Ven : 8h à 14h, 16h à 21hSamedi : 10h à 13h</p>
               </div>
               <div>
-                <h5 class="mb-2 fw-bold">Email</h5>
-                <p class="mb-0">contact@studiobiarritz.com<br>ou via ce formulaire</p>
+                <h5 class="mb-2 fw-bold large body">Email</h5>
+                <p class="mb-0 small body">contact@studiobiarritz.com ou via ce formulaire</p>
               </div>
             </div>
           </div>
+          <!-- Formulaire de contact -->
           <div class="col-lg-6">
-            <div class="contact-card">
-              <h2 class="section-title mb-4">
-                <!--Section formulaire ! -->
-                <span class="border-bottom border-3 border-warning">Formu</span>laire de contact
+            <div class="contact-card p-0">
+              <h2 class="section-title mb-4 fs-1 font-text gold-underline">Formulaire de contact
               </h2>
               <form>
                 <div class="row g-3">
@@ -135,8 +135,9 @@
                   <div class="col-12">
                     <textarea id="text" class="form-control" rows="5" placeholder="Votre message"></textarea>
                   </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-submit w-60">Envoyer</button>
+                  <!-- bouton call to action -->
+                  <div class="">
+                     <a href="contact.html" class="btn btn-gold body">Envoyer</a>
                   </div>
                 </div>
               </form>
@@ -145,10 +146,10 @@
         </div>
       </div>
     </section>
-
-    <section class="map-section">
+    <!-- carte de type mapping -->
+    <div class="map-section">
       <img src="assets/img/maps2sp-copie.png" alt="Carte de Biarritz" class="img-fluid w-100">
-    </section>
+    </div>
   </main>
   
  <!-- FOOTER -->
@@ -199,32 +200,32 @@
   </div>
 
   <!-- Footer Content -->
-  <div class="container pb-4">
+  <div class="container pb-4 h-auto">
     <div class="row gy-4">
       <!-- Column 1 -->
       <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-baseline justify-content-center justify-content-md-start gap-md-3 text-center text-md-start mb-3" style="margin-top: -15px;">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-baseline justify-content-center justify-content-md-start gap-md-3 text-center text-md-start mb-3">
           <!-- Logo -->
           <div>
-            <img src="assets/img/footer/logo_footer.png" alt="logofooter" style="width: 30px; height: auto;">
+            <img src="assets/img/footer/logo_footer.png" alt="logofooter" class="footer-logo">
           </div>
           <!-- Title -->
-          <div class="mt-2 mt-md-0">
-            <h3 class="text-uppercase fw-bold mb-3 text-white">À PROPOS</h3>
+          <div class="mt-auto mt-md-0">
+            <h3 class="text-uppercase text-white font-text fs-4">À PROPOS</h3>
           </div>
         </div>
-        <p class="mb-1"><strong>2018 © Studio Sport Biarritz</strong></p>
-        <p class="mb-1">Salle de sport, de fitness et de crossfit<br>à Biarritz Pays basque.</p>
-        <p class="mb-1">RCS : 000 000 000</p>
-        <p class="mb-4 mb-md-0">
+        <p class="mb-1 body xsmall"><strong>2018 © Studio Sport Biarritz</strong></p>
+        <p class="mb-1 body xsmall">Salle de sport, de fitness et de crossfit<br>à Biarritz Pays basque.</p>
+        <p class="mb-1 body xsmall">RCS : 000 000 000</p>
+        <p class="mb-4 mb-md-0 body xsmall">
           <a href="404.html" class="fw-bold" style="text-decoration: underline;">Mentions légales</a>
         </p>
       </div>
 
       <!-- Column 2 -->
       <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-        <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Studio Sport Corporate</h3>
-        <ul class="list-unstyled footer-links">
+        <h3 class="text-uppercase mb-md-5 text-wrap text-white font-text fs-4">Studio Sport Corporate</h3>
+        <ul class="list-unstyled footer-links body xsmall">
           <li><a href="accueil.html">Studio Center : créez votre studio</a></li>
           <li><a href="404.html">Offres Spéciales C.E.</a></li>
           <li><a href="404.html">Devenir partenaire</a></li>
@@ -232,9 +233,9 @@
       </div>
 
       <!-- Column 3 -->
-      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-        <h3 class="text-uppercase mb-3 mb-md-5 fw-bold text-wrap text-white">Fitness, CrossFit et Training au Pays Basque</h3>
-        <p class="fw-bold">
+      <div class="col-12 col-md-6 col-lg-4 text-center text-md-start ">
+        <h3 class="text-uppercase mb-md-5 text-wrap text-white text-center fs-4">Fitness, CrossFit et Training au Pays Basque</h3>
+        <p class="fw-bold body xsmall">
           <a href="404.html">Coach personnel de sport à Biarritz</a>,
           <a href="404.html">Coach personnel de sport à Anglet</a>,
           <a href="404.html">Salle de sport BAB</a>,
@@ -249,11 +250,11 @@
   </div>
 
   <!-- Footer Bottom -->
-  <div class="text-center py-3 px-2 bg-black small text-secondary text-center" style="font-size: 12px;">
+  <div class="text-center py-3 px-2 bg-black small text-secondary text-center footer-agence">
     <p class="mb-0 text-white">
       Un site créé par<br>
       <strong class="text-white">L'AGENCE 364 COM</strong>
-      <img src="assets/img/footer/364.png" alt="logoagence" class="align-middle ms-2" style="height: 20px;">
+      <img src="assets/img/footer/364.png" alt="logoagence" class="align-middle ms-2 footer-agence-logo">
     </p>
   </div>
 </footer>
