@@ -221,10 +221,11 @@ h2 span{
   /*  */
   .card-contenaire{
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: end;  
-    padding: 1rem 2rem;
-    height: 100%;
+    padding: 1.5rem;
+    min-height: 60%;
     text-align: center;
   }
   
@@ -412,6 +413,15 @@ a {
 }
   .navbar-brand {
     margin-left: 1.5rem; 
+  }
+  .p17{
+    font-size: 0.938rem;
+  }
+  .p15{
+    font-size: 0.875rem;
+  }
+  .p12{
+    font-size: 0.75rem;
   }
 }
 
