@@ -197,21 +197,21 @@ h2 span{
 .bg-poids {
     background-image: url(assets/img/accueil/bg_activite_1.jpg);
     background-size: cover;
-    height: 60vh;
+    height: 445px;
 }
 .bg-velo{
     background-image: url(assets/img/accueil/bg_activite_2.jpg);
     background-size: cover;
-    height: 60vh;
+    height: 445px;
 }
 .bg-corde{
   background-image: url(assets/img/accueil/bg_activite_3.jpg);
   background-size: cover;
-  height: 60vh;
+  height: 445px;
 }
 .bg-haltere{
     background-image: url(assets/img/accueil/bg_activite_4.jpg);
-    height: 60vh;
+    height: 445px;
     background-size: cover;
   }
   .bg-color{
