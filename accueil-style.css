@@ -189,9 +189,9 @@ h2 span{
 }
 /* taille des icones activités */
 .width-60{
-  width: auto;
-  max-height: 80px;
-  margin: 0 auto;
+ max-height: 60px;
+ object-fit: contain;
+ margin-bottom: 0.8rem;
 }
 /* mise en place des fonds des cartes */
 .bg-poids {
@@ -223,10 +223,14 @@ h2 span{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: end;  
+    justify-content: flex-end;  
     padding: 1.5rem;
     min-height: 60%;
+    height: 100%;
     text-align: center;
+  }
+  .row > div {
+    display: flex ;
   }
   
   .none{
